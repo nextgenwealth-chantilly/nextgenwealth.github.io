@@ -17,6 +17,28 @@
     >
 
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* Keep the team in the exact order requested */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        /* Make Ananya's photo match the other team photos */
+        .ananya-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 65%;
+        }
+
+        @media (max-width: 800px) {
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 
 
@@ -33,7 +55,6 @@
             <a href="index.html" class="logo">
                 NextGen<span>Wealth</span>
             </a>
-
 
             <nav>
 
@@ -59,7 +80,6 @@
 
             </nav>
 
-
             <a
                 href="involved.html#involved"
                 class="nav-button"
@@ -72,105 +92,126 @@
     </header>
 
 
-
     <!-- =========================
          TEAM HERO
     ========================== -->
 
     <main>
 
-        <section class="team-hero" style="text-align: center;">
-
-    <div
-        class="team-hero-content"
-        style="max-width: 1000px; margin: 0 auto; text-align: center;"
-    >
-
-        <div class="section-label" style="text-align: center;">
-            MEET THE TEAM
-        </div>
-
-        <h1
-            style="
-                text-align: center;
-                margin-left: auto;
-                margin-right: auto;
-            "
+        <section
+            class="team-hero"
+            style="text-align: center;"
         >
-            The people behind
-            <span>the mission.</span>
-        </h1>
 
-        <p
-            style="
-                text-align: center;
-                margin-left: auto;
-                margin-right: auto;
-            "
-        >
-            Meet the students working together to make financial
-            literacy more accessible, engaging, and relevant
-            for the next generation.
-        </p>
+            <div
+                class="team-hero-content"
+                style="
+                    max-width: 1000px;
+                    margin: 0 auto;
+                    text-align: center;
+                "
+            >
 
-    </div>
+                <div
+                    class="section-label"
+                    style="text-align: center;"
+                >
+                    MEET THE TEAM
+                </div>
 
-</section>
+                <h1
+                    style="
+                        text-align: center;
+                        margin-left: auto;
+                        margin-right: auto;
+                    "
+                >
+                    The people behind
+                    <span>the mission.</span>
+                </h1>
 
+                <p
+                    style="
+                        text-align: center;
+                        margin-left: auto;
+                        margin-right: auto;
+                    "
+                >
+                    Meet the students working together to make financial
+                    literacy more accessible, engaging, and relevant
+                    for the next generation.
+                </p>
+
+            </div>
+
+        </section>
 
 
         <!-- =========================
              TEAM INTRO
         ========================== -->
 
-        <section class="team-intro" style="text-align: center;">
-
-    <div
-        class="team-intro-text"
-        style="
-            max-width: 900px;
-            margin: 0 auto;
-            text-align: center;
-        "
-    >
-
-        <div class="section-label" style="text-align: center;">
-            OUR TEAM
-        </div>
-
-        <h2
-            style="
-                text-align: center;
-                margin-left: auto;
-                margin-right: auto;
-            "
+        <section
+            class="team-intro"
+            style="text-align: center;"
         >
-            Different strengths.
-            <span>One goal.</span>
-        </h2>
 
-        <p
-            style="
-                text-align: center;
-                margin-left: auto;
-                margin-right: auto;
-            "
-        >
-            NextGen Wealth is powered by a team of students
-            who believe that financial education should start
-            early. From developing educational programs to
-            building our community, each member brings a
-            different perspective and skill set to our mission.
-        </p>
+            <div
+                class="team-intro-text"
+                style="
+                    max-width: 900px;
+                    margin: 0 auto;
+                    text-align: center;
+                "
+            >
 
-    </div>
+                <div
+                    class="section-label"
+                    style="text-align: center;"
+                >
+                    OUR TEAM
+                </div>
 
-</section>
+                <h2
+                    style="
+                        text-align: center;
+                        margin-left: auto;
+                        margin-right: auto;
+                    "
+                >
+                    Different strengths.
+                    <span>One goal.</span>
+                </h2>
 
+                <p
+                    style="
+                        text-align: center;
+                        margin-left: auto;
+                        margin-right: auto;
+                    "
+                >
+                    NextGen Wealth is powered by a team of students
+                    who believe that financial education should start
+                    early. From developing educational programs to
+                    building our community, each member brings a
+                    different perspective and skill set to our mission.
+                </p>
+
+            </div>
+
+        </section>
 
 
         <!-- =========================
              TEAM MEMBERS
+             
+             ORDER:
+             1. Mahika - TOP LEFT
+             2. Reya - TOP RIGHT
+             3. Emma - MIDDLE LEFT
+             4. Louane - MIDDLE RIGHT
+             5. Ananya - BOTTOM LEFT
+             6. EMPTY - BOTTOM RIGHT
         ========================== -->
 
         <section class="team-section">
@@ -179,7 +220,7 @@
 
 
                 <!-- =========================
-                     MAHIKA
+                     1. MAHIKA
                 ========================== -->
 
                 <article class="team-card">
@@ -191,10 +232,7 @@
                             alt="Mahika Damaraju"
                         >
 
-                        
-
                     </div>
-
 
                     <div class="team-info">
 
@@ -202,11 +240,9 @@
                             FOUNDER
                         </div>
 
-
                         <h2>
                             Mahika Damaraju
                         </h2>
-
 
                         <p>
                             Mahika Damaraju is a student at Chantilly
@@ -224,9 +260,8 @@
                 </article>
 
 
-
                 <!-- =========================
-                     REYA
+                     2. REYA
                 ========================== -->
 
                 <article class="team-card">
@@ -238,10 +273,7 @@
                             alt="Reya Simhadri"
                         >
 
-                        
-
                     </div>
-
 
                     <div class="team-info">
 
@@ -249,11 +281,9 @@
                             CO-FOUNDER
                         </div>
 
-
                         <h2>
                             Reya Simhadri
                         </h2>
-
 
                         <p>
                             Reya Simhadri is a student at George C.
@@ -273,9 +303,8 @@
                 </article>
 
 
-
                 <!-- =========================
-                     EMMA
+                     3. EMMA
                 ========================== -->
 
                 <article class="team-card">
@@ -287,10 +316,7 @@
                             alt="Emma Jacob"
                         >
 
-                       
-
                     </div>
-
 
                     <div class="team-info">
 
@@ -298,11 +324,9 @@
                             SOCIAL MEDIA &amp; RECRUITMENT
                         </div>
 
-
                         <h2>
                             Emma Jacob
                         </h2>
-
 
                         <p>
                             Emma Jacob is a student at Chantilly High
@@ -322,17 +346,8 @@
                 </article>
 
 
-                <!-- Emma's card -->
-<article class="team-card">
-    ...
-</article>
-
-
-
-
-
                 <!-- =========================
-                     LOUANE
+                     4. LOUANE
                 ========================== -->
 
                 <article class="team-card">
@@ -344,10 +359,7 @@
                             alt="Louane Kang"
                         >
 
-                       
-
                     </div>
-
 
                     <div class="team-info">
 
@@ -355,11 +367,9 @@
                             COMMUNITY LEAD
                         </div>
 
-
                         <h2>
                             Louane Kang
                         </h2>
-
 
                         <p>
                             Louane Kang is a student at George C.
@@ -376,31 +386,61 @@
 
                 </article>
 
-<!-- Ananya's card -->
-<article class="team-card">
-    <div class="team-photo">
-        <img src="annie.jpg" alt="Ananya Gadwala">
-    </div>
 
-    <div class="team-info">
-        <div class="team-role">Strategic Initiatives Coordinator</div>
-        <h2>Ananya Gadwala</h2>
-        <p>
-            Ananya Gadwala is a student at Chantilly High School and leads
-            fundraising efforts and program development for NextGen Wealth.
-            As a DECA state awardee in the Principles of Finance event, she
-            understands the importance of basic financial understanding and
-            how to meaningfully reach audiences. Through her innovation and
-            development, Ananya aims to contribute to a more informed
-            generation of spenders.
-        </p>
-    </div>
-</article>
+                <!-- =========================
+                     5. ANANYA
+                ========================== -->
+
+                <article class="team-card">
+
+                    <div class="team-photo ananya-photo">
+
+                        <img
+                            src="annie.jpg"
+                            alt="Ananya Gadwala"
+                        >
+
+                    </div>
+
+                    <div class="team-info">
+
+                        <div class="team-role">
+                            STRATEGIC INITIATIVES COORDINATOR
+                        </div>
+
+                        <h2>
+                            Ananya Gadwala
+                        </h2>
+
+                        <p>
+                            Ananya Gadwala is a student at Chantilly High
+                            School and leads fundraising efforts and
+                            program development for NextGen Wealth.
+                            As a DECA state awardee in the Principles of
+                            Finance event, she understands the importance
+                            of basic financial understanding and how to
+                            meaningfully reach audiences. Through her
+                            innovation and development, Ananya aims to
+                            contribute to a more informed generation of
+                            spenders.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- =========================
+                     6. EMPTY SPOT
+                     Reserved for a future team member
+                ========================== -->
+
+                <div class="team-card team-card-empty"></div>
+
 
             </div>
 
         </section>
-
 
 
         <!-- =========================
@@ -408,64 +448,66 @@
         ========================== -->
 
         <section
-    class="team-cta"
-    style="
-        text-align: center;
-        justify-content: center;
-    "
->
-
-    <div
-        class="team-cta-content"
-        style="
-            max-width: 900px;
-            margin: 0 auto;
-            text-align: center;
-        "
-    >
-
-        <div class="section-label" style="text-align: center;">
-            OUR MISSION
-        </div>
-
-        <h2
+            class="team-cta"
             style="
                 text-align: center;
-                margin-left: auto;
-                margin-right: auto;
+                justify-content: center;
             "
         >
-            We're building something
-            <span>bigger than ourselves.</span>
-        </h2>
 
-        <p
-            style="
-                text-align: center;
-                margin-left: auto;
-                margin-right: auto;
-            "
-        >
-            And we're just getting started.
-        </p>
+            <div
+                class="team-cta-content"
+                style="
+                    max-width: 900px;
+                    margin: 0 auto;
+                    text-align: center;
+                "
+            >
 
-        <a
-            href="index.html#involved"
-            class="team-cta-button"
-            style="
-                display: inline-block;
-                margin-top: 25px;
-            "
-        >
-            Get Involved →
-        </a>
+                <div
+                    class="section-label"
+                    style="text-align: center;"
+                >
+                    OUR MISSION
+                </div>
 
-    </div>
+                <h2
+                    style="
+                        text-align: center;
+                        margin-left: auto;
+                        margin-right: auto;
+                    "
+                >
+                    We're building something
+                    <span>bigger than ourselves.</span>
+                </h2>
 
-</section>
+                <p
+                    style="
+                        text-align: center;
+                        margin-left: auto;
+                        margin-right: auto;
+                    "
+                >
+                    And we're just getting started.
+                </p>
+
+                <a
+                    href="index.html#involved"
+                    class="team-cta-button"
+                    style="
+                        display: inline-block;
+                        margin-top: 25px;
+                    "
+                >
+                    Get Involved →
+                </a>
+
+            </div>
+
+        </section>
 
     </main>
-
 
 
     <!-- =========================
@@ -476,14 +518,12 @@
 
         <div class="footer-main">
 
-
             <div class="footer-brand">
 
                 <img
                     src="logo.png"
                     alt="NextGen Wealth logo"
                 >
-
 
                 <p>
                     Building the next generation of
@@ -493,18 +533,15 @@
             </div>
 
 
-
             <div class="footer-contact">
 
                 <div class="footer-label">
                     CONTACT
                 </div>
 
-
                 <a href="mailto:nextgenwealthchantilly@gmail.com">
                     nextgenwealthchantilly@gmail.com
                 </a>
-
 
                 <a
                     href="https://www.instagram.com/nextgenwealthchantilly/"
@@ -517,25 +554,19 @@
             </div>
 
 
-
             <div class="footer-location">
 
                 <div class="footer-label">
                     SERVING
                 </div>
 
-
                 <p>
                     DMV Area
                 </p>
 
-
-                
-
             </div>
 
         </div>
-
 
 
         <div class="footer-bottom">
@@ -543,7 +574,6 @@
             <span>
                 © 2026 NextGen Wealth Chantilly
             </span>
-
 
             <span>
                 Financial literacy for the next generation.
